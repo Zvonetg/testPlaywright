@@ -2,10 +2,7 @@ const { test } = require('@playwright/test');
 const LoginPage = require('../pages/LoginPage');  
 const DashboardPage = require('../pages/DashboardPage');  
 
-
 const login = "https://syskit-point-e2e-task-2025.syskit365demo.com/#/";
-const dashboard = 'https://syskit-point-e2e-task-2025.syskit365demo.com/#/b31634b7-e85a-463d-bbda-500023a99bd0/dashboard/main';
-
 
 test.describe('Syskit E2E Test', () => {
 
@@ -18,8 +15,6 @@ test.describe('Syskit E2E Test', () => {
     const loginPage = new LoginPage(page);
     const dashboardPage = new DashboardPage(page);
     await loginPage.login('AdeleV@vnrqy.onmicrosoft.com', 'hXSbE79Nj8CMbVn');
-    await page.goto(dashboard);
-
     await dashboardPage.teamsAndGroupsLink.click();
     await dashboardPage.searchAndPickChronos()
     await dashboardPage.confirmDelete();

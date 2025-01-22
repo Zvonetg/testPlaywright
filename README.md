@@ -14,7 +14,7 @@ npm i playwright
     {
       name: 'chromium',
       use: {
-        headless: false,
+        headless: true,
         viewport: { width: 1680, height: 1050},
         ignoreHTTPSErrors: true,
         trace: 'on',
@@ -23,7 +23,7 @@ npm i playwright
         video: 'off'
       },
 
-headless mode is off
+headless mode is on, feel free to change in pw config
 
 ### Run Test
 npx playwright test --ui

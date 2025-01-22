@@ -31,7 +31,7 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
 
-  /* konfiguracije */
+  /* config */
   projects: [
     {
       name: 'chromium',

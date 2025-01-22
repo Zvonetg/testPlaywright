@@ -27,7 +27,7 @@ class LoginPage {
     get yesButton() {
       return this.page.locator('input:has-text("Yes")');
     }
-  
+
     async login(email, password) {
       await this.signInButton.click();
       await this.emailField.fill(email);
