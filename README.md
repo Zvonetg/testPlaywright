@@ -1,6 +1,4 @@
-# Playwirght Test
-
-# WebPerformanceDashboard
+# Playwright Test
 
 ### Installation
 
@@ -25,7 +23,14 @@ npm i playwright
         video: 'off'
       },
 
-headless mode is off with default
+headless mode is off
+
+### Run Test
+npx playwright test --ui
+
+### Debug Test
+npx playwright test syskit.spec.js --debug
+
 
 ### Run Test in package.json
 
