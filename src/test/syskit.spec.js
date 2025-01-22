@@ -20,9 +20,9 @@ test.describe('Syskit E2E Test', () => {
     await page.goto(dashboard);
     
     await dashboardPage.teamsAndGroupsLink.click();
-    await dashboardPage.clickSearch();
-    await dashboardPage.clickChronos();
-    await dashboardPage.searchAndDelete();
+    await dashboardPage.propertyIsEnumerable();
+    await dashboardPage.searchAndPickChronos()
+    await dashboardPage.confirmDelete();
     
     await dashboardPage.verifyDeletionFailure();
   });

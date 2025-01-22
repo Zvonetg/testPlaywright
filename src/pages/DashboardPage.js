@@ -1,4 +1,5 @@
 class DashboardPage {
+
     constructor(page) {
       this.page = page;
     }
@@ -6,45 +7,28 @@ class DashboardPage {
     get teamsAndGroupsLink() {
       return this.page.locator('a:has-text("Teams & Groups")');
     }
-  
-    get searchDataGridField() {
-      return this.page.locator('input[placeholder="Search..."]');
-    }
 
-    get rowCheckbox() {
-      return this.page.locator('span:has-text("Chronos")');
-    }
-  
-    get deleteButton() {
-      return this.page.locator('button:has-text("Delete")');
-    }
-  
     get confirmationTextArea() {
       return this.page.locator('textarea');
     }
 
-    get confirmDelete() {
-        return this.page.locator('div:has-text("Type DELETE here")');
-      }
-  
     get saveButton() {
       return this.page.locator('button:has-text("Delete")');
     }
 
-    async clickSearch() {
+
+    async searchAndPickChronos() {
         await this.page.getByLabel('Search in the data grid').click();
         await this.page.getByLabel('Search in the data grid').fill('Chronos');
-      }
-
-      async clickChronos() {
         await this.page.getByRole('link', { name: 'Chronos', exact: true }).click();
         await this.page.getByTestId('report-actions-container').getByText('Delete').click();
-        await this.page.locator('div:nth-child(2) > .dx-texteditor-container > .dx-texteditor-input-container > .dx-texteditor-input').click();
-        await this.page.locator('div:nth-child(2) > .dx-texteditor-container > .dx-texteditor-input-container > .dx-texteditor-input').fill('DELETE');
-      }
+    }
 
     
-    async searchAndDelete() {
+    async confirmDelete() {
+      await this.page.locator('div:nth-child(2) > .dx-texteditor-container > .dx-texteditor-input-container > .dx-texteditor-input').click();
+      await this.page.locator('div:nth-child(2) > .dx-texteditor-container > .dx-texteditor-input-container > .dx-texteditor-input').fill('DELETE');
+      await this.confirmationTextArea.click();
       await this.confirmationTextArea.fill('DELETE');
       await this.saveButton.click();
     }
