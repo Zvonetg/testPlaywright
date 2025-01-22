@@ -32,7 +32,7 @@ npx playwright test --ui
 npx playwright test syskit.spec.js --debug
 
 
-### Run Test in package.json
+### Run Test in with json scripts
 
 "scripts": 
 
@@ -50,3 +50,7 @@ This CI part is define in playwright.yml file.
 there is also video report that I upload as a PoC.
 
 https://drive.google.com/drive/folders/19UIKVXOKUNHI89Y-AU3sI6pKQRE7IMpF
+
+UI:
+
+![Screenshot 2025-01-22 at 22.21.15.png](image/Screenshot 2025-01-22 at 22.21.15.png)
