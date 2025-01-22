@@ -53,4 +53,4 @@ https://drive.google.com/drive/folders/19UIKVXOKUNHI89Y-AU3sI6pKQRE7IMpF
 
 UI:
 
-<!-- Uploading "Screenshot 2025-01-22 at 22.21.15.png"... -->
+<img width="1578" alt="Image" src="https://github.com/user-attachments/assets/047b30df-6d8b-48ff-ab99-588b037238ac" />
