@@ -14,7 +14,6 @@ test.describe('Syskit E2E Test', () => {
     await page.goto(login);
   });
 
-  
   test('should Adele user try to delete Chronos Team', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const dashboardPage = new DashboardPage(page);
