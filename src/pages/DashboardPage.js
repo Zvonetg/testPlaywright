@@ -16,7 +16,6 @@ class DashboardPage {
       return this.page.locator('button:has-text("Delete")');
     }
 
-
     async searchAndPickChronos() {
         await this.page.getByLabel('Search in the data grid').click();
         await this.page.getByLabel('Search in the data grid').fill('Chronos');
@@ -24,7 +23,6 @@ class DashboardPage {
         await this.page.getByTestId('report-actions-container').getByText('Delete').click();
     }
 
-    
     async confirmDelete() {
       await this.page.locator('div:nth-child(2) > .dx-texteditor-container > .dx-texteditor-input-container > .dx-texteditor-input').click();
       await this.page.locator('div:nth-child(2) > .dx-texteditor-container > .dx-texteditor-input-container > .dx-texteditor-input').fill('DELETE');
