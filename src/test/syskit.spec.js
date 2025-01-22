@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test } = require('@playwright/test');
 const LoginPage = require('../pages/LoginPage');  
 const DashboardPage = require('../pages/DashboardPage');  
 
@@ -19,12 +19,10 @@ test.describe('Syskit E2E Test', () => {
     const dashboardPage = new DashboardPage(page);
     await loginPage.login('AdeleV@vnrqy.onmicrosoft.com', 'hXSbE79Nj8CMbVn');
     await page.goto(dashboard);
-    
+
     await dashboardPage.teamsAndGroupsLink.click();
-    await dashboardPage.propertyIsEnumerable();
     await dashboardPage.searchAndPickChronos()
     await dashboardPage.confirmDelete();
-    
     await dashboardPage.verifyDeletionFailure();
   });
 });
