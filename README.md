@@ -46,3 +46,7 @@ Browser for test: Chrome (default)
 For advanced Task I didn't want to write more tests because I can write a lot of them.
 Bonus from my side for this task is a gitlab action which will be triggered every time when we push some changes.
 This CI part is define in playwright.yml file.
+
+there is also video report that I upload as a PoC.
+
+https://drive.google.com/drive/folders/19UIKVXOKUNHI89Y-AU3sI6pKQRE7IMpF
