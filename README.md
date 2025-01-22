@@ -53,4 +53,4 @@ https://drive.google.com/drive/folders/19UIKVXOKUNHI89Y-AU3sI6pKQRE7IMpF
 
 UI:
 
-![Screenshot 2025-01-22 at 22.21.15.png](./image/Screenshot 2025-01-22 at 22.21.15.png)
+<!-- Uploading "Screenshot 2025-01-22 at 22.21.15.png"... -->
