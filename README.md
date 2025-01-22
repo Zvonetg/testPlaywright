@@ -9,8 +9,6 @@
 - [Run Single Acceptance Test](#Run-Single-Acceptance-Test)
 - [Tips](#Tips)
 
-<!-- tag::body[] -->
-
 ### Installation
 
 ```bash
