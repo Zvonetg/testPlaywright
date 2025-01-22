@@ -41,5 +41,5 @@ npx playwright test syskit.spec.js --debug
 "pwChrome": "playwright test --project=chromium",
 "pwDebug": "playwright test --debug"
 
-
+Browser for test: Chrome (default)
 
