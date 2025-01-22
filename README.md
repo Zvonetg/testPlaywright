@@ -15,7 +15,7 @@
 $ npm install
 ```
 
-### Run locally
+
 
 
 Note, you will also need to run the [login service](gwg-login-web/README.md)  and the [GWG backend](gwg/README.md##Running the Service) to use the app locally.
