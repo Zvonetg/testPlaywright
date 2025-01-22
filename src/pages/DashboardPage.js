@@ -33,7 +33,7 @@ class DashboardPage {
   
     async verifyDeletionFailure() {
      await this.page.locator('text=Adele Vance failed to delete').isVisible();
-      // await expect(this.page.locator('.message')).toContainText('Action completed with errors.'); check this!
+      // await expect(this.page.locator('.message')).toContainText('Action completed with errors.'); or this one
     }
   }
   
